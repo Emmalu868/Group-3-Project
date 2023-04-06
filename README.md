@@ -8,11 +8,7 @@ Shan Lu  <br>
 Wanlin Li  <br>
 
 # Project Description 
-## Problem Statement
-To help investors manage their portfolios more effectively or provide financial advisors with a tool for portfolio management.
-
-## Target audience
-Individual investors
+Develop a financial analysis tool that forecasts portfolio returns and enables financial advisors/individual investors manage their portfolios more effectively.
 
 # Research questions to answer
 - What are the top 2 stocks given by the client?
