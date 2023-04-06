@@ -1,38 +1,40 @@
-# Project Title
+# Project Proposal
+
+## Project Title
 Portfolio Analyzer
 
-# Team Members
+## Team Members
 Harshitha Katta  <br>
 Karthika Ramachandran  <br>
 Shan Lu  <br>
 Wanlin Li  <br>
 
-# Project Description 
-Develop a financial analysis tool that forecasts portfolio returns and enables financial advisors/individual investors manage their portfolios more effectively.
+## Project Description 
+Develop a financial analysis tool that forecasts portfolio returns for chosen 20 stocks and enables financial advisors/individual investors manage their portfolios more effectively.
 
-# Research questions to answer
-- What are the top 2 stocks given by the client?
-- In 1 year, 5 years, 10 years what are the optimal options for profits?
+## Research Questions to Answer
+- What are the top 2 stocks and weights recommended to clients?
+- What are the optimal options for profits in 1 year and 5 years?
 
-# Datasets to be used
+## Datasets to be Used
 - Market data: Alpaca API
 - Financial statements
 - Economic indicators
 
-# Task Breakdown
-## Determine the features
+## Task Breakdown
+### Determine the features
 - Risk assessment
 - Asset allocation
 - Performance tracking
 - Benchmark comparisons.
 
-## Design the User Interface
+### Design the User Interface
 - Visualizations, charts, and tables
 - User-friendly interface 
 
-## Develop the algorithms
+### Develop the algorithms
 - Risk models
 - Asset allocation models
 - Performance tracking models
 
-## Test and refine
+### Test and refine
