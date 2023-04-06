@@ -2,7 +2,8 @@
 
 ## Define the problem:
 
-To help investors manage their portfolios more effectively or provide financial advisors with a tool for portfolio management.
+- To help investors manage their portfolios more effectively 
+- provide financial advisors portfolio management.
 
 ## Target audience
 
