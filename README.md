@@ -22,7 +22,7 @@ Develop a financial analysis tool that forecasts portfolio returns for chosen 20
 - Economic indicators
 
 ## Task Breakdown
-### Determine the features
+### Determine the Features
 - Risk assessment
 - Asset allocation
 - Performance tracking
@@ -32,9 +32,9 @@ Develop a financial analysis tool that forecasts portfolio returns for chosen 20
 - Visualizations, charts, and tables
 - User-friendly interface 
 
-### Develop the algorithms
+### Develop the Algorithm
 - Risk models
 - Asset allocation models
 - Performance tracking models
 
-### Test and refine
+### Test and Refine
