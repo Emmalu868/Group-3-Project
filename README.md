@@ -18,9 +18,9 @@ Individual investors
 ??
 
 # Datasets to be used
-- market data
-- financial statements
-- economic indicators
+- Market data
+- Financial statements
+- Economic indicators
 
 # Task Breakdown
 ## Determine the features
@@ -30,12 +30,12 @@ Individual investors
 - Benchmark comparisons.
 
 ## Design the User Interface
-- visualizations, charts, and tables
-- User-friendly interface (If we have more time)
+- Visualizations, charts, and tables
+- User-friendly interface 
 
 ## Develop the algorithms
-- risk models
-- asset allocation models
-- performance tracking models
+- Risk models
+- Asset allocation models
+- Performance tracking models
 
 ## Test and refine
