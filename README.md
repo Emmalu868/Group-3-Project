@@ -1,34 +1,39 @@
-# Portfolio Analyzer
+# Project Title
+Portfolio Analyzer
 
-## Define the problem
+# Team Members
+Harshitha Katta
+Karthika Ramachandran
+Shan Lu
+Wanlin Li
 
-- To help investors manage their portfolios more effectively 
-- provide financial advisors portfolio management
+# Project Description 
+## Problem Statement
+To help investors manage their portfolios more effectively or provide financial advisors with a tool for portfolio management.
 
 ## Target audience
-
 Individual investors
 
-## Determine the features
+# Research questions to answer
+??
 
-- Risk assessment
-- Asset allocation
-- Performance tracking
-- Benchmark comparisons
-
-## Select the data sources
-
-- market data:
+# Datasets to be used
+- market data
 - financial statements
 - economic indicators
 
-## Design the User Interface
+# Task Breakdown
+## Determine the features
+- Risk assessment
+- Asset allocation
+- Performance tracking
+- Benchmark comparisons.
 
+## Design the User Interface
 - visualizations, charts, and tables
 - User-friendly interface (If we have more time)
 
 ## Develop the algorithms
-
 - risk models
 - asset allocation models
 - performance tracking models
