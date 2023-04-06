@@ -1,6 +1,6 @@
 # Portfolio Analyzer
 
-## Define the problem:
+## Define the problem
 
 - To help investors manage their portfolios more effectively 
 - provide financial advisors portfolio management
