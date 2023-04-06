@@ -2,10 +2,10 @@
 Portfolio Analyzer
 
 # Team Members
-Harshitha Katta
-Karthika Ramachandran
-Shan Lu
-Wanlin Li
+- Harshitha Katta
+- Karthika Ramachandran
+- Shan Lu
+- Wanlin Li
 
 # Project Description 
 ## Problem Statement
