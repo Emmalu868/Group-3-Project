@@ -15,7 +15,7 @@ Develop a financial analysis tool that forecasts portfolio returns and enables f
 - In 1 year, 5 years, 10 years what are the optimal options for profits?
 
 # Datasets to be used
-- Market data
+- Market data: Alpaca API
 - Financial statements
 - Economic indicators
 
