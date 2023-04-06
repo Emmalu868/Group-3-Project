@@ -8,11 +8,9 @@ Portfolio Analyzer
 - Wanlin Li
 
 # Project Description 
-## Problem Statement
-To help investors manage their portfolios more effectively or provide financial advisors with a tool for portfolio management.
+**Problem Statement:** To help investors manage their portfolios more effectively or provide financial advisors with a tool for portfolio management.
 
-## Target audience
-Individual investors
+**Target audience:** Individual investors
 
 # Research questions to answer
 ??
