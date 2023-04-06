@@ -3,7 +3,7 @@
 ## Define the problem:
 
 - To help investors manage their portfolios more effectively 
-- provide financial advisors portfolio management.
+- provide financial advisors portfolio management
 
 ## Target audience
 
@@ -14,7 +14,7 @@ Individual investors
 - Risk assessment
 - Asset allocation
 - Performance tracking
-- Benchmark comparisons.
+- Benchmark comparisons
 
 ## Select the data sources
 
