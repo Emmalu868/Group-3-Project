@@ -4,10 +4,10 @@ from dash.dependencies import Input, Output
 # Connect to main app.py file
 from app import app
 # Connect to your app pages
-from apps import homePage, K, S, H, W
+from apps import gasPrices, homePage, withPandemic, withStock
 
 
-#------------------------------------
+# ------------------------------------
 
 # styling the sidebar
 SIDEBAR_STYLE = {
@@ -31,16 +31,19 @@ sidebar = html.Div(
     [
         html.H6("UofT FinTech Boot Camp ", className="display-4"),
         html.Hr(),
-       # html.H3(
+        # html.H3(
         #     " ", className='text-center text-primary mb-3'
         # ),
         dbc.Nav(
             [dbc.NavLink("Home", href='/apps/homePage', active="exact"),
-            dbc.NavLink("Page K", href='/apps/K', active="exact"),
-            dbc.NavLink("Page S", href='/apps/S', active="exact"),
-            dbc.NavLink("Page H", href='/apps/H', active="exact"),
-            dbc.NavLink("Page W", href='/apps/W', active="exact"),
-            ],
+             dbc.NavLink("Gasoline Prices",
+                         href='/apps/gasPrices', active="exact"),
+             dbc.NavLink("Compare with Airline Stocks",
+                         href='/apps/withStock', active="exact"),
+             dbc.NavLink("Impact of the pandemic",
+                         href='/apps/withPandemic', active="exact"),
+
+             ],
             vertical=True,
             pills=True,
         ),
@@ -57,22 +60,20 @@ app.layout = html.Div([
 ])
 
 
-
 @app.callback(Output('page-content', 'children'),
               [Input('url', 'pathname')])
 def display_page(pathname):
-    if pathname == '/apps/homePage': 
+    if pathname == '/apps/homePage':
         return homePage.layout
-    if pathname == '/apps/K': 
-       return K.layout
-    if pathname == '/apps/S':
-        return S.layout
-    if pathname == '/apps/H':
-        return H.layout
-    if pathname == '/apps/W':
-        return W.layout
+    if pathname == '/apps/gasPrices':
+        return gasPrices.layout
+    if pathname == '/apps/withStock':
+        return withStock.layout
+    if pathname == '/apps/withPandemic':
+        return withPandemic.layout
+
     else:
-        return homePage.layout 
+        return homePage.layout
 
 
 if __name__ == '__main__':
