@@ -10,18 +10,26 @@ How does change in oil price affect stock market? <br>
 Can oil prices impact certain industries?
 
 ## Datasets
+[internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv): Contains monthly oil price data from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA. <br>
+[coordinates.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/coordinates.csv): Contains geographic coordinates
 
 ## Data Cleanup & Exploration
 ### Part 1: Analysis of Historical Oil Price
-* Used Pandas to read the internationalpumppricesall csv file as a DataFrame and converted the dates to a DateTimeIndex. The internationalpumppricesall.csv file contains monthly oil price data from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA. <br>
-* Detected and removed null values using dropna function.
-* Removed a duplicate column "Situation fiscale" using drop function.
+#### Files used for analysis 
+[internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv)<br>
+[coordinates.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/coordinates.csv)<br>
+
+* Used Pandas `read_csv` function to read the internationalpumppricesall csv file as a DataFrame and converted the dates to a DateTimeIndex. The internationalpumppricesall.csv file contains monthly oil price data from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA. 
+* Detected and removed null values using `dropna` function.
+* Removed a duplicate column "Situation fiscale" using `drop` function.
 * Renamed columns to reflect the countries in English.
 * Created a dataframe that slices the Tax Status for Total price.
 * Used the hvplot function to plot the total_pump_price_all dataFrame as a line chart. 
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/monthly_pump_price.png)
 
-
+* Created a new dataframe and aggregated the values to include only the average price for each country.
+* 
+![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pump_price_geoview.png)
  
 
 ### Part 2: Examining the Relationship Between Oil Price and Stocks
