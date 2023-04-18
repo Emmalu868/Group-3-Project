@@ -1,4 +1,4 @@
-name: dash
+name: Gasoline_Dashboard
 channels:
   - defaults
 dependencies:
