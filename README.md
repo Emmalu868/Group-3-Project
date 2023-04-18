@@ -1,23 +1,28 @@
-# This is the title of our project
-
+# Analysis of Gasoline Prices and Airline Stocks in the Global Market
+**Team Members:** <br>
+Karthika Ramachandran <br>
+Wanlin Li <br>
+Shan Lu <br>
+Harshitha Katta <br>
 
 ## About the project
+Analysis of trend in gasoline prices across geographical regions and examining the relationship between gasoline price and stock market.<br>
 
-Analysis of trend in oil price across geographical regions and examining the relationship between oil price and stock market. 
 
-## Research Questions
-How does change in oil price affect stock market? <br>
+## Hypothesis
+How does change in gasoline price affect stock market? <br>
 
 
 ## Datasets
-[internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv): Contains monthly oil price data from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA. <br>
-[coordinates.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/coordinates.csv): Contains geographic coordinates. <br>
-[air_canada.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/air_canada.csv): Yahoo Finance Airline Stock <br>
-[air_france.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/air_france.csv): Yahoo Finance Airline Stock (EUR) <br>
-[american_airlines.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/american_airlines.csv): Yahoo Finance Airline Stock (USD) <br>
-[germany_lha.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/germany_lha.csv): Yahoo Finance Airline Stock (EUR) <br>
-[japan_all_nippon_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/japan_all_nippon_airways.csv): Yahoo Finance Airline Stock (USD) <br>
-[uk_tui_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/uk_tui_airways.csv): Yahoo Finance Airline Stock (GBP) <br>
+* **[internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv):** Obtained from [data.ontario.ca](https://data.ontario.ca/dataset/gasoline-report-international-gasoline-prices) and contains monthly average gasoline price from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA, all converted to Canadian cents per litre.  <br>
+* **[coordinates.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/coordinates.csv):** Contains geographic coordinates.
+* [air_canada.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/air_canada.csv): Yahoo Finance Airline Stock <br>
+* [air_france.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/air_france.csv): Yahoo Finance Airline Stock (EUR) <br>
+* [american_airlines.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/american_airlines.csv): Yahoo Finance Airline Stock (USD) <br>
+* [germany_lha.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/germany_lha.csv): Yahoo Finance Airline Stock (EUR) <br>
+* [japan_all_nippon_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/japan_all_nippon_airways.csv): Yahoo Finance Airline Stock (USD) <br>
+* [uk_tui_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/uk_tui_airways.csv): Yahoo Finance Airline Stock (GBP) <br>
+
 
 ## Data Cleanup & Exploration
 ### Part 1: Analysis of Historical Gasoline Price
@@ -37,7 +42,10 @@ How does change in oil price affect stock market? <br>
 * 
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pump_price_geoview.png)
  
-## Part 2: Examining the Relationship Between Oil Price and Stocks
+
+### Part 2: Trend Analysis of Gasoline Prices before and after Pandemic
+
+### Part 3: Examining the Relationship Between Oil Price and Stocks
 * Used Pandas `read_csv` function and Path module to read all 6 airline stocks, created 6 DataFrame and converted the dates to a DateTimeIndex for all dataframes.
 * Renamed close column to the airline names and dropped other columns in the 6 airline dataframes.
 * Detected and removed null values using `dropna` function.
@@ -46,30 +54,30 @@ How does change in oil price affect stock market? <br>
 * Combined 6 airlines into a single dataframe(df_monthly) by using `concat` function.
 * Used the `plot` function to plot the df_monthly dataframe as a line chart. 
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline%20Stocks%20Price%20from%202012%20to%202023.png)
-- ### Analysis: 
-UK TUI Airways has the highest stock price at all time, peak is over $175 CAD in 2018. <br>
-All 6 ariline stocks show a highest price in 2018. <br>
-In 2020 there is a sharpe decrease for all stocks. <br>
+### Analysis: 
+UK TUI Airways has the highest stock price at all time, peak is over $175 CAD in 2018.
+All 6 ariline stocks show a highest price in 2018.
+In 2020 there is a sharpe decrease for all stocks.
 
 * Calculated monthly returns by using `pct_change` function and drop null values by using `dropna`.
 * Combined 6 airlines returns into a single dataframe(df_monthly_return) by using `concat` function.
 * Used the `plot` function to plot the df_monthly_return dataFrame as a line chart.
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline%20Monthly%20Returns%20from%202012%20to%202023.png)
-- ### Analysis: <br>
+### Analysis: 
 Air Canada has the highest cumulative return for over 40 at the end of 2019, in early 2020 there is a sharp decrease to <20, which is the biggest price drop over the last 10 years.
 
 ### Risk Analysis
 * Created a box plot for each portfolio
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/all%20monthly%20return%20box%20plot.png)
-- ### Analysis:
-Air France has the highest return at nearly 0.8 and the lowest return at -0.6, therefore Air France is the most risky airline stocks. <br>
-Japan Airways has the smallest fluctuation among all airline stocks, the return range is from -0.2 to 0.3.<br>
+### Analysis:
+- Air France has the highest return at nearly 0.8 and the lowest return at -0.6, therefore Air France is the most risky airline stocks.
+- Japan Airways has the smallest fluctuation among all airline stocks, the return range is from -0.2 to 0.3.
 
 ### Import Gasoline and Correlation
 * Combined total_pump_price_all and df_monthly by using `concat` function, named the dataframe all_df.
 * Used `heatmap` to plot the correlation.
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Correlation%20Matrix%20Gasoline%20and%20Airline'.png)
-- ### Analysis on correlation between gasoline price and airline stocks:
+### Analysis on correlation between gasoline price and airline stocks:
 - UK and UK Airways has a weak to medium negative linear correlation at -0.3.
 - Germany and Germany LHA has a weak to medium negative correlation at -0.26.
 - France and Air France has a weak negative correlation at -0.2.
@@ -77,7 +85,7 @@ Japan Airways has the smallest fluctuation among all airline stocks, the return 
 - Canada and Air Canada has a weak positive correlation at 0.09.
 - USA and American Airlines has a medium negative linear correlation at -0.42.
 
-### Part 3: Examining the Relationship Between Oil Price and Stocks
+
 
 ## Conclusion
 
