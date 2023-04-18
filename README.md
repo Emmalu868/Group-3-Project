@@ -10,11 +10,11 @@ How does change in oil price affect stock market? <br>
 Can oil prices impact certain industries?
 
 ## Datasets
-[internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv): Contains monthly oil price data from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA. <br>
+[internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv): Contains monthly gasoline price from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA. <br>
 [coordinates.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/coordinates.csv): Contains geographic coordinates
 
 ## Data Cleanup & Exploration
-### Part 1: Analysis of Historical Oil Price
+### Part 1: Analysis of Historical Gasoline Price
 #### Files used for analysis 
 [internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv)<br>
 [coordinates.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/coordinates.csv)<br>
@@ -32,9 +32,9 @@ Can oil prices impact certain industries?
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pump_price_geoview.png)
  
 
-### Part 2: Examining the Relationship Between Oil Price and Stocks
+### Part 2: Trend Analysis of Gasoline Prices before and after Pandemic
 
-### Part 3: Examining the Trend in Oil Price during a Crisis
+### Part 3: Examining the Relationship Between Oil Price and Stocks
 
 ## Conclusion
 
