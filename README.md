@@ -1,7 +1,7 @@
 # This is the title of our project
 
 
-# 📝 About the project
+## About the project
 
 Analysis of trend in oil price across geographical regions and examining the relationship between oil price and stock market. 
 
@@ -41,7 +41,7 @@ Can oil prices impact certain industries?
 
 
 
-# ⚒️ Dependencies
+## Dependencies
 
 -   [Python](https://www.python.org/)
 -   [Conda](https://conda.io/)  
@@ -50,15 +50,15 @@ The workflow includes the following Python packages:
 - [numpy](https://pypi.org/project/numpy/)
 - [pandas](https://pypi.org/project/pandas/)
 
-# Getting started 
+## Getting started 
 
-**1. Clone this repo.**
+**1. Clone this repo**
 
     git clone https://github.com/Emmalu868/Group-3-Project.git
     cd Group-3-Project
 
 
-**2. 🚀 Install dependencies.** <br><br>
+**2. 🚀 Install dependencies** <br><br>
 ***2.1 If you do not have Conda installed, then use the following method to install it. If you already have Conda installed, then refer directly to the next step (2.2).***
 
     # download Miniconda3 installer
