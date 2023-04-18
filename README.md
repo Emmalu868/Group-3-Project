@@ -1,17 +1,21 @@
-# This is the title of our project
-
+# Analysis of Gasoline Prices and Airline Stocks in the Global Market
+**Team Members:** <br>
+Karthika Ramachandran <br>
+Wanlin Li <br>
+Shan Lu <br>
+Harshitha Katta <br>
 
 ## About the project
+Analysis of trend in gasoline prices across geographical regions and examining the relationship between gasoline price and stock market.<br>
 
-Analysis of trend in oil price across geographical regions and examining the relationship between oil price and stock market. 
 
-## Research Questions
-How does change in oil price affect stock market? <br>
-Can oil prices impact certain industries?
+## Hypothesis
+How does change in gasoline price affect stock market? <br>
+
 
 ## Datasets
-[internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv): Contains monthly gasoline price from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA. <br>
-[coordinates.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/coordinates.csv): Contains geographic coordinates
+* **[internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv):** Obtained from [data.ontario.ca](https://data.ontario.ca/dataset/gasoline-report-international-gasoline-prices) and contains monthly average gasoline price from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA, all converted to Canadian cents per litre.  <br>
+* **[coordinates.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/coordinates.csv):** Contains geographic coordinates.
 
 ## Data Cleanup & Exploration
 ### Part 1: Analysis of Historical Gasoline Price
