@@ -11,7 +11,22 @@ Can oil prices impact certain industries?
 
 ## Datasets
 
+## Data Cleanup & Exploration
+### Part 1: Analysis of Historical Oil Price
+* Used Pandas to read the internationalpumppricesall csv file as a DataFrame and converted the dates to a DateTimeIndex. The internationalpumppricesall.csv file contains monthly oil price data from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA. <br>
+* Detected and removed null values using dropna function.
+* Removed a duplicate column "Situation fiscale" using drop function.
+* Renamed columns to reflect the countries in English.
+* Created a dataframe that slices the Tax Status for Total price.
+* Used the hvplot function to plot the total_pump_price_all dataFrame as a line chart. 
+![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/monthly_pump_price.png)
 
+
+ 
+
+### Part 2: Examining the Relationship Between Oil Price and Stocks
+
+### Part 3: Examining the Trend in Oil Price during a Crisis
 
 ## Conclusion
 
