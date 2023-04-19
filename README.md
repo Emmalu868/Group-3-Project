@@ -66,6 +66,11 @@ In 2020 there is a sharpe decrease for all stocks.
 * Used the `plot` function to plot the df_monthly_return dataFrame as a line chart.
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline%20Monthly%20Returns%20from%202012%20to%202023.png)
 #### Analysis: 
+Air France has the highest return in 2020 at nearly 0.8, and the lowest return in 2022 at about -0.6.
+
+* Plotted cumulative returns by using `cumprod` function and `plot`
+![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Cumulative%20Monthly%20Returns%20on%20Airlines%20from%202012%20to%202023.png)
+#### Analysis: 
 Air Canada has the highest cumulative return for over 40 at the end of 2019, in early 2020 there is a sharp decrease to <20, which is the biggest price drop over the last 10 years.
 
 #### Risk Analysis
