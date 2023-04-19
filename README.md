@@ -45,7 +45,20 @@ From the above heatmap, it is observed that USA, Canada, UK, Germany and France 
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pump_price_geoview.png)<br>
 From the above plot, it is seen that among the countries analysed, USA has the lowest average gasoline price followed by Canada. Countries in Europe and the UK have the highest average price.
 
-### Part 2: Trend Analysis of Gasoline Prices before and after Pandemic
+### Part 2: Examining the tax status of each country to identifying factors that impact the prices. Descriptive statistics of each country to identify trends, patterns, and anomalies. Visualization of gasoline prices
+* Used Pandas `read_csv` function and Path module to read gasoline prices of all six countries, created international_gasoline_prices DataFrame and converted the dates to a DateTimeIndex for all dataframes.
+* Slicing the data by Tax Status: base price of gasoline price, tax and total price of the gasoline.
+* Three separate data frames are created according to tax status 'base_prices', 'tax_prices', 'total_prices'
+* Measured average Gasoline prices by tax status.
+
+
+* Descriptive Analysis to understand the data deeper. 
+Calculating Mean, Median, Maximum, Minimum, Variance and Standard Deviation.
+
+* Trend Analysis of gasoline prices Before And After the Pandemic 
+*  Creating two separate dataframes of the data 'before_2020_df' and 'after_2020_df'
+![](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-patch-4/Trend%20Analysis.ipynb)
+
 
 ### Part 3: Examining the Relationship Between Oil Price and Stocks
 * Used Pandas `read_csv` function and Path module to read all 6 airline stocks, created 6 DataFrame and converted the dates to a DateTimeIndex for all dataframes.
@@ -95,9 +108,7 @@ Air Canada has the highest cumulative return for over 40 at the end of 2019, in 
 
 
 ## Conclusion
-
-
-
+In conclusion, we see a negative correlation between gasoline prices and airline stocks. This may be because higher gasoline prices increase the cost of operating airlines, which can decrease their profits and overall value. Alternatively, when gasoline prices are low, airlines may have lower operating costs and higher profits, which can increase the value of their stocks.
 
 ## Dependencies
 
