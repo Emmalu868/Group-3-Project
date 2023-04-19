@@ -50,7 +50,7 @@ As per studies and research, gasoline prices and airline stock prices share an i
 * Combined 6 airlines into a single dataframe(df_monthly) by using `concat` function.
 * Used the `plot` function to plot the df_monthly dataframe as a line chart. 
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline%20Stocks%20Price%20from%202012%20to%202023.png)
-### Analysis: 
+#### Analysis: 
 UK TUI Airways has the highest stock price at all time, peak is over $175 CAD in 2018.
 All 6 ariline stocks show a highest price in 2018.
 In 2020 there is a sharpe decrease for all stocks.
@@ -59,21 +59,21 @@ In 2020 there is a sharpe decrease for all stocks.
 * Combined 6 airlines returns into a single dataframe(df_monthly_return) by using `concat` function.
 * Used the `plot` function to plot the df_monthly_return dataFrame as a line chart.
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline%20Monthly%20Returns%20from%202012%20to%202023.png)
-### Analysis: 
+#### Analysis: 
 Air Canada has the highest cumulative return for over 40 at the end of 2019, in early 2020 there is a sharp decrease to <20, which is the biggest price drop over the last 10 years.
 
-### Risk Analysis
+#### Risk Analysis
 * Created a box plot for each portfolio
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/all%20monthly%20return%20box%20plot.png)
-### Analysis:
+#### Analysis:
 - Air France has the highest return at nearly 0.8 and the lowest return at -0.6, therefore Air France is the most risky airline stocks.
 - Japan Airways has the smallest fluctuation among all airline stocks, the return range is from -0.2 to 0.3.
 
-### Import Gasoline and Correlation
+#### Import Gasoline and Correlation
 * Combined total_pump_price_all and df_monthly by using `concat` function, named the dataframe all_df.
 * Used `heatmap` to plot the correlation.
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Correlation%20Matrix%20Gasoline%20and%20Airline'.png)
-### Analysis on correlation between gasoline price and airline stocks:
+#### Analysis on correlation between gasoline price and airline stocks:
 - UK and UK Airways has a weak to medium negative linear correlation at -0.3.
 - Germany and Germany LHA has a weak to medium negative correlation at -0.26.
 - France and Air France has a weak negative correlation at -0.2.
