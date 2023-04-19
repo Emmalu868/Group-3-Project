@@ -50,6 +50,8 @@ From the above plot, it is seen that among the countries analysed, USA has the l
 * Slicing the data by Tax Status: base price of gasoline price, tax and total price of the gasoline.
 * Three separate data frames are created according to tax status 'base_prices', 'tax_prices', 'total_prices'
 * Measured average Gasoline prices by tax status.
+![](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/tax%20status.PNG)<br>
+
 
 
 * Descriptive Analysis to understand the data deeper. 
