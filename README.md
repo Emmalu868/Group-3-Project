@@ -20,7 +20,7 @@ As per studies and research, gasoline prices and airline stock prices share an i
 * **[uk_tui_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/uk_tui_airways.csv):** Yahoo Finance Airline Stock (GBP) <br>
 
 
-## Data Cleanup & Exploration
+## Data Cleanup & Exploration and Data Analysis
 ### Part 1: Analysis of Historical Gasoline Price
 #### Files used for analysis 
 [internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv)<br>
