@@ -94,12 +94,12 @@ Air Canada has the highest cumulative return for over 40 at the end of 2019, in 
 
 
 
-## Conclusion
+##  📊 Dashboard
 
 
 
 
-## Dependencies
+### Dependencies
 
 -   [Python](https://www.python.org/)
 -   [Conda](https://conda.io/)  
@@ -108,7 +108,7 @@ The workflow includes the following Python packages:
 - [numpy](https://pypi.org/project/numpy/)
 - [pandas](https://pypi.org/project/pandas/)
 
-## Getting started 
+### Getting started 
 
 **1. Clone this repo**
 
