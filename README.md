@@ -22,10 +22,6 @@ As per studies and research, gasoline prices and airline stock prices share an i
 
 ## Data Cleanup & Exploration and Data Analysis
 ### Part 1: Analysis of Historical Gasoline Price
-#### Files used for analysis 
-[internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv)<br>
-[coordinates.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/coordinates.csv)<br>
-
 * Used Pandas `read_csv` function to read the internationalpumppricesall csv file as a DataFrame and converted the dates to a DateTimeIndex. The internationalpumppricesall.csv file contains monthly oil price data from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA. 
 * Detected and removed null values using `dropna` function.
 * Removed a duplicate column "Situation fiscale" using `drop` function.
@@ -33,11 +29,11 @@ As per studies and research, gasoline prices and airline stock prices share an i
 * Created a dataframe that slices the Tax Status for Total price.
 * Used the hvplot function to plot the total_pump_price_all dataFrame as a line chart. 
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/monthly_pump_price.png)
-
+**Analysis:** The above plot displays the change in the monthly average gasoline price across 6 major countries from 2012 to 2022. It can be observed that all the countries follow a similar pattern except for Japan which is further analysed below. There is a sharp decrease in the average price from mid 2014 to early 2015. This due to an oversupply of petroleum on the world market which accelerated the drop in overall prices. There is also a drop in the average price in the early 2020 due to covid-19 pandemic. As the novel coronavirus continued to spread around the world, several countries imposed strict quarantine measures and travel restrictions, causing a drop in the demand for gasoline. Morevover, it can be observed that the price continues to go up from late 2020 reaching decade's highest in mid 2022 with major contributing factors being economic recovery after pandemic and Russia-Ukraine war.
 * Created a new dataframe and aggregated the values to include only the average price for each country.
 * 
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pump_price_geoview.png)
- 
+**Analysis:**
 
 ### Part 2: Trend Analysis of Gasoline Prices before and after Pandemic
 
