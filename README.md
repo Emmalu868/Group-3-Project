@@ -56,10 +56,10 @@ From the above plot, it is seen that among the countries analysed, USA has the l
 
 * Descriptive Analysis to understand the data deeper.
 * Calculating Mean, Median, Maximum, Minimum, Variance and Standard Deviation. 
-* ![](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/des%20stats.PNG)<br>
+ ![](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/des%20stats.PNG)<br>
 
 
-Trend Analysis of gasoline prices Before And After the Pandemic 
+* Trend Analysis of gasoline prices Before And After the Pandemic 
 *  Creating two separate dataframes of the data 'before_2020_df' and 'after_2020_df'
 ![Trend Analysis](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-patch-4/Trend%20Analysis.ipynb)
 
