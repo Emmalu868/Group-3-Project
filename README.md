@@ -6,30 +6,22 @@ Shan Lu <br>
 Harshitha Katta <br>
 
 ## About the project
-Analysis of trend in gasoline prices across geographical regions and examining the relationship between gasoline price and stock market.<br>
-
-
-## Hypothesis
-How does change in gasoline price affect stock market? <br>
+As per studies and research, gasoline prices and airline stock prices share an inverse relationship, with the value of airline stocks rising as the gasoline's price falls. Our project is to test this by analysing historic gasoline prices and airline stocks for some of the major economies and examining their relationship. Our project also analyses how the demand and price for gasoline is impacted by a global crisis such as the COVID-19 pandemic.  <br>
 
 
 ## Datasets
 * **[internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv):** Obtained from [data.ontario.ca](https://data.ontario.ca/dataset/gasoline-report-international-gasoline-prices) and contains monthly average gasoline price from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA, all converted to Canadian cents per litre.  <br>
 * **[coordinates.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/coordinates.csv):** Contains geographic coordinates.
-* [air_canada.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/air_canada.csv): Yahoo Finance Airline Stock <br>
-* [air_france.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/air_france.csv): Yahoo Finance Airline Stock (EUR) <br>
-* [american_airlines.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/american_airlines.csv): Yahoo Finance Airline Stock (USD) <br>
-* [germany_lha.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/germany_lha.csv): Yahoo Finance Airline Stock (EUR) <br>
-* [japan_all_nippon_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/japan_all_nippon_airways.csv): Yahoo Finance Airline Stock (USD) <br>
-* [uk_tui_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/uk_tui_airways.csv): Yahoo Finance Airline Stock (GBP) <br>
+* **[air_canada.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/air_canada.csv):** Yahoo Finance Airline Stock <br>
+* **[air_france.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/air_france.csv):** Yahoo Finance Airline Stock (EUR) <br>
+* **[american_airlines.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/american_airlines.csv):** Yahoo Finance Airline Stock (USD) <br>
+* **[germany_lha.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/germany_lha.csv):** Yahoo Finance Airline Stock (EUR) <br>
+* **[japan_all_nippon_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/japan_all_nippon_airways.csv):** Yahoo Finance Airline Stock (USD) <br>
+* **[uk_tui_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/uk_tui_airways.csv):** Yahoo Finance Airline Stock (GBP) <br>
 
 
-## Data Cleanup & Exploration
+## Data Cleanup & Exploration and Data Analysis
 ### Part 1: Analysis of Historical Gasoline Price
-#### Files used for analysis 
-[internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv)<br>
-[coordinates.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/coordinates.csv)<br>
-
 * Used Pandas `read_csv` function to read the internationalpumppricesall csv file as a DataFrame and converted the dates to a DateTimeIndex. The internationalpumppricesall.csv file contains monthly oil price data from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA. 
 * Detected and removed null values using `dropna` function.
 * Removed a duplicate column "Situation fiscale" using `drop` function.
@@ -37,11 +29,11 @@ How does change in gasoline price affect stock market? <br>
 * Created a dataframe that slices the Tax Status for Total price.
 * Used the hvplot function to plot the total_pump_price_all dataFrame as a line chart. 
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/monthly_pump_price.png)
-
+**Analysis:** The above plot displays the change in the monthly average gasoline price across 6 major countries from 2012 to 2022. It can be observed that all the countries follow a similar pattern except for Japan which is further analysed below. There is a sharp decrease in the average price from mid 2014 to early 2015. This due to an oversupply of petroleum on the world market which accelerated the drop in overall prices. There is also a drop in the average price in the early 2020 due to covid-19 pandemic. As the novel coronavirus continued to spread around the world, several countries imposed strict quarantine measures and travel restrictions, causing a drop in the demand for gasoline. Morevover, it can be observed that the price continues to go up from late 2020 reaching decade's highest in mid 2022 with major contributing factors being economic recovery after pandemic and Russia-Ukraine war.
 * Created a new dataframe and aggregated the values to include only the average price for each country.
 * 
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pump_price_geoview.png)
- 
+**Analysis:**
 
 ### Part 2: Trend Analysis of Gasoline Prices before and after Pandemic
 
@@ -54,7 +46,7 @@ How does change in gasoline price affect stock market? <br>
 * Combined 6 airlines into a single dataframe(df_monthly) by using `concat` function.
 * Used the `plot` function to plot the df_monthly dataframe as a line chart. 
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline%20Stocks%20Price%20from%202012%20to%202023.png)
-### Analysis: 
+#### Analysis: 
 UK TUI Airways has the highest stock price at all time, peak is over $175 CAD in 2018.
 All 6 ariline stocks show a highest price in 2018.
 In 2020 there is a sharpe decrease for all stocks.
@@ -63,21 +55,25 @@ In 2020 there is a sharpe decrease for all stocks.
 * Combined 6 airlines returns into a single dataframe(df_monthly_return) by using `concat` function.
 * Used the `plot` function to plot the df_monthly_return dataFrame as a line chart.
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline%20Monthly%20Returns%20from%202012%20to%202023.png)
-### Analysis: 
-Air Canada has the highest cumulative return for over 40 at the end of 2019, in early 2020 there is a sharp decrease to <20, which is the biggest price drop over the last 10 years.
+#### Analysis: 
+Air France has the highest return in 2020 at nearly 0.8, and the lowest return in 2022 at about -0.6.
+* Plotted cumulative returns by using `cumprod` function
+![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Cumulative%20Monthly%20Returns%20on%20Airlines%20from%202012%20to%202023.png)
+#### Analysis: 
+Air Canada has the highest cumulative return for over 40 at the end of 2019, in early 2020 there is a sharp decrease to <20, which is the biggest pricedrop over the last 10 years.
 
-### Risk Analysis
+#### Risk Analysis
 * Created a box plot for each portfolio
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/all%20monthly%20return%20box%20plot.png)
-### Analysis:
+#### Analysis:
 - Air France has the highest return at nearly 0.8 and the lowest return at -0.6, therefore Air France is the most risky airline stocks.
 - Japan Airways has the smallest fluctuation among all airline stocks, the return range is from -0.2 to 0.3.
 
-### Import Gasoline and Correlation
+#### Import Gasoline and Correlation
 * Combined total_pump_price_all and df_monthly by using `concat` function, named the dataframe all_df.
 * Used `heatmap` to plot the correlation.
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Correlation%20Matrix%20Gasoline%20and%20Airline'.png)
-### Analysis on correlation between gasoline price and airline stocks:
+#### Analysis on correlation between gasoline price and airline stocks:
 - UK and UK Airways has a weak to medium negative linear correlation at -0.3.
 - Germany and Germany LHA has a weak to medium negative correlation at -0.26.
 - France and Air France has a weak negative correlation at -0.2.
