@@ -6,11 +6,7 @@ Shan Lu <br>
 Harshitha Katta <br>
 
 ## About the project
-Analysis of trend in gasoline prices across geographical regions and examining the relationship between gasoline price and stock market.<br>
-
-
-## Hypothesis
-How does change in gasoline price affect stock market? <br>
+As per studies and research, gasoline prices and airline stock prices share an inverse relationship, with the value of airline stocks rising as the gasoline's price falls. Our project is to test this by analysing historic gasoline prices and airline stocks for some of the major economies and examining their relationship. Our project also analyses how the demand and price for gasoline is impacted by a global crisis such as the COVID-19 pandemic.  <br>
 
 
 ## Datasets
