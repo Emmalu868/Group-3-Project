@@ -33,7 +33,7 @@ As per studies and research, gasoline prices and airline stock prices share an i
 * Transposed the dataframe using `T` and renamed columns accordingly.
 * Used the Pandas `read_csv` function to read the coordinates csv file as a DataFrame.
 * Used the Pandas `concat` function to join the pump_price_df and the coordinates DataFrames.
-* Plotted an interactive map displaying average gasoline price for each country using `havplot.points`. 
+* Plotted an interactive map displaying average gasoline price for each country using `hvplot.points`. 
 
 #### Analysis
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/average_monthly_pump_price.png)<br>
