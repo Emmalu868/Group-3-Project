@@ -16,12 +16,12 @@ How does change in gasoline price affect stock market? <br>
 ## Datasets
 * **[internationalpumppricesall.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/internationalpumppricesall.csv):** Obtained from [data.ontario.ca](https://data.ontario.ca/dataset/gasoline-report-international-gasoline-prices) and contains monthly average gasoline price from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA, all converted to Canadian cents per litre.  <br>
 * **[coordinates.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Resources/coordinates.csv):** Contains geographic coordinates.
-* [air_canada.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/air_canada.csv): Yahoo Finance Airline Stock <br>
-* [air_france.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/air_france.csv): Yahoo Finance Airline Stock (EUR) <br>
-* [american_airlines.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/american_airlines.csv): Yahoo Finance Airline Stock (USD) <br>
-* [germany_lha.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/germany_lha.csv): Yahoo Finance Airline Stock (EUR) <br>
-* [japan_all_nippon_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/japan_all_nippon_airways.csv): Yahoo Finance Airline Stock (USD) <br>
-* [uk_tui_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/uk_tui_airways.csv): Yahoo Finance Airline Stock (GBP) <br>
+* **[air_canada.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/air_canada.csv):** Yahoo Finance Airline Stock <br>
+* **[air_france.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/air_france.csv):** Yahoo Finance Airline Stock (EUR) <br>
+* **[american_airlines.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/american_airlines.csv):** Yahoo Finance Airline Stock (USD) <br>
+* **[germany_lha.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/germany_lha.csv):** Yahoo Finance Airline Stock (EUR) <br>
+* **[japan_all_nippon_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/japan_all_nippon_airways.csv):** Yahoo Finance Airline Stock (USD) <br>
+* **[uk_tui_airways.csv](https://github.com/Emmalu868/Group-3-Project/blob/main/Airline%20Data/Airline/uk_tui_airways.csv):** Yahoo Finance Airline Stock (GBP) <br>
 
 
 ## Data Cleanup & Exploration
