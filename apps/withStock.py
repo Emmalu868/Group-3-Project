@@ -121,7 +121,7 @@ layout = html.Div([
         dbc.Row([
             dbc.Col([
                 html.Div([
-                    html.H5("Airline Stocks Prices Vs. Airline Stocks Prices for the Selected Country",
+                    html.H5("Correlation between Airline Stocks Prices and Gasoline Prices for the Selected Country",
                             style={'text-align': 'left'}),
                     dcc.Graph(id='corr', figure={}),
                     html.Br(),
@@ -210,8 +210,10 @@ def update_fig(region):
 
     container_region = "The region chosen by user was: {}".format(region)
 
-    fig = px.scatter(df_air_gas, x=region, y=region.lower(), trendline="ols"
-                     )
+    fig = px.scatter(df_air_gas, x=region, y=region.lower(), trendline="ols",
+                     ).update_layout(
+        xaxis_title="Gasoline Prices", yaxis_title="Airline Stocks Prices"
+    )
     return container_region, fig
 
 # Airline Stocks Prices Fluctuations for the Selected Year
@@ -229,13 +231,15 @@ def update_fig(year):
     dff_airPrice = df_Melt_airprice.copy()
     dff_airPrice = dff_airPrice[dff_airPrice["Year"] == year]
 
-    print('data for airline price')
+    # print('data for airline price')
     print(dff_airPrice[:6])
 
     fig = px.line(
         dff_airPrice, x="day", y="price",
         color="regions",
-        hover_name='regions')
+        hover_name='regions').update_layout(
+        xaxis_title="Date", yaxis_title="Airline Stocks Prices"
+    )
 
     return container_year, fig
 
@@ -251,12 +255,14 @@ def update_fig(year):
     dff_airChange = df_Melt_airChange .copy()
     dff_airChange = dff_airChange[dff_airChange["Year"] == year]
 
-    print('data for change price')
+    # print('data for change price')
     print(dff_airChange[:6])
     fig = px.line(
         dff_airChange, x="day", y="price",
         color="regions",
-        hover_name='regions')
+        hover_name='regions').update_layout(
+        xaxis_title="Date", yaxis_title="Airline Stocks Prices Monthly Percentage Chage"
+    )
 
     return fig
 
@@ -271,11 +277,13 @@ def update_fig(year):
     print(year)
     dff_gas = df_gas.copy()
     dff_gas = dff_gas[dff_gas["Year"] == year]
-    print('data for gas price')
+    # print('data for gas price')
     print(dff_gas[:5])
     fig = px.line(
         dff_gas, x="day", y="price",
         color="regions",
-        hover_name='regions')
+        hover_name='regions').update_layout(
+        xaxis_title="Date", yaxis_title="Gasoline Prices"
+    )
 
     return fig
