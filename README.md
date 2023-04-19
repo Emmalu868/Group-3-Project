@@ -57,7 +57,7 @@ Calculating Mean, Median, Maximum, Minimum, Variance and Standard Deviation.
 
 * Trend Analysis of gasoline prices Before And After the Pandemic 
 *  Creating two separate dataframes of the data 'before_2020_df' and 'after_2020_df'
-![](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-patch-4/Trend%20Analysis.ipynb)
+![Trend Analysis](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-patch-4/Trend%20Analysis.ipynb)
 
 
 ### Part 3: Examining the Relationship Between Oil Price and Stocks
