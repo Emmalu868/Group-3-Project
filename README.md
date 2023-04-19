@@ -54,13 +54,28 @@ From the above plot, it is seen that among the countries analysed, USA has the l
 
 
 
-* Descriptive Analysis to understand the data deeper. 
-Calculating Mean, Median, Maximum, Minimum, Variance and Standard Deviation.
+* Descriptive Analysis to understand the data deeper.
+* Calculating Mean, Median, Maximum, Minimum, Variance and Standard Deviation. 
+* ![](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/des%20stats.PNG)<br>
+
 
 * Trend Analysis of gasoline prices Before And After the Pandemic 
 *  Creating two separate dataframes of the data 'before_2020_df' and 'after_2020_df'
 ![Trend Analysis](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-patch-4/Trend%20Analysis.ipynb)
 
+![Before_2020_df](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/before%202020.PNG)<br>
+![After_2020_df](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/after%202020.PNG)<br>
+Visulaize the trend of gasoline prices before and after the pandemic.
+![Analysis of dataframes before and after 2020](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/box.PNG)<br>
+![Price Range](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/pr.PNG)<br>
+![Price Range Difference](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/ga.PNG)<br>
+![Correlaion](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/correlation%20graph%20before%20and%20after%20pandemic.PNG)<br>
+![Growth rate Of UK](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/growth%20rate%20of%20UK%20through%20before%20and%20after%20pandemic.PNG)<br>
+![Canada](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/growth%20rate%20of%20canada%20before%20and%20after%20pandemic.PNG)<br>
+![France](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/growth%20rate%20of%20france%20before%20and%20after%20pandemic.PNG)<br>
+![japan](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/growth%20rate%20of%20japan%20before%20and%20after%20pandemic.PNG)<br>
+![USA](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/growth%20rate%20of%20usa%20before%20and%20after%20pandemic.PNG)<br>
+![USA](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-ReadMe-final/Growth%20rate%20germany%20before%20and%20after%20pandemic.PNG)<br>
 
 ### Part 3: Examining the Relationship Between Oil Price and Stocks
 * Used Pandas `read_csv` function and Path module to read all 6 airline stocks, created 6 DataFrame and converted the dates to a DateTimeIndex for all dataframes.
