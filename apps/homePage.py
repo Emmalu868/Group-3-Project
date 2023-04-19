@@ -21,14 +21,14 @@ card1 = dbc.Card(
         dbc.CardImg(src="/assets/pump-jack.jpg", top=True),
         dbc.CardBody(
             [
-                html.H4("This is the title of our project",
+                html.H4("Analysis of Gasoline Prices and Airline Stocks in the Global Market",
                         className="card-title"),
-                html.H6(
-                    "sub title, if we have ",
-                    className="card-text",
-                ),
+                # html.H6(
+                #     "sub title, if we have ",
+                #     className="card-text",
+                # ),
                 html.P(
-                    "Some introduction",
+                    "This project analyzed of trend in gasoline prices across geographical regions and examined the relationship between gasoline price and stock market.",
                     className="card-text",
                 ),
                 dbc.CardLink(
