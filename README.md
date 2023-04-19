@@ -22,18 +22,28 @@ As per studies and research, gasoline prices and airline stock prices share an i
 
 ## Data Cleanup & Exploration and Data Analysis
 ### Part 1: Analysis of Historical Gasoline Price
-* Used Pandas `read_csv` function to read the internationalpumppricesall csv file as a DataFrame and converted the dates to a DateTimeIndex. The internationalpumppricesall.csv file contains monthly oil price data from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA. 
+* Used the Pandas `read_csv` function to read the internationalpumppricesall csv file as a DataFrame and converted the dates to a DateTimeIndex. The internationalpumppricesall.csv file contains monthly oil price data from 2012 to 2022 for 6 major countries- UK, Germany, France, Japan, Canada and USA. 
 * Detected and removed null values using `dropna` function.
 * Removed a duplicate column "Situation fiscale" using `drop` function.
 * Renamed columns to reflect the countries in English.
 * Created a dataframe that slices the Tax Status for Total price.
-* Used the hvplot function to plot the total_pump_price_all dataFrame as a line chart. 
-![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/monthly_pump_price.png)
-**Analysis:** The above plot displays the change in the monthly average gasoline price across 6 major countries from 2012 to 2022. It can be observed that all the countries follow a similar pattern except for Japan which is further analysed below. There is a sharp decrease in the average price from mid 2014 to early 2015. This due to an oversupply of petroleum on the world market which accelerated the drop in overall prices. There is also a drop in the average price in the early 2020 due to covid-19 pandemic. As the novel coronavirus continued to spread around the world, several countries imposed strict quarantine measures and travel restrictions, causing a drop in the demand for gasoline. Morevover, it can be observed that the price continues to go up from late 2020 reaching decade's highest in mid 2022 with major contributing factors being economic recovery after pandemic and Russia-Ukraine war.
-* Created a new dataframe and aggregated the values to include only the average price for each country.
-* 
-![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pump_price_geoview.png)
-**Analysis:**
+* Used the `hvplot` function to plot the total_pump_price_all dataFrame as a line chart.
+* Calculated correlation using `corr` function and plotted as heatmap. 
+* Created a new dataframe and aggregated the values using `agg` to include only the average price for each country.
+* Transposed the dataframe using `T` and renamed columns accordingly.
+* Used the Pandas `read_csv` function to read the coordinates csv file as a DataFrame.
+* Used the Pandas `concat` function to join the pump_price_df and the coordinates DataFrames.
+* Plotted an interactive map displaying average gasoline price for each country using `hvplot.points`. 
+
+#### Analysis:
+![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/average_monthly_pump_price.png)<br>
+The above plot displays the change in the monthly average gasoline price across 6 major countries from 2012 to 2022. It can be observed that all the countries follow a similar pattern except for Japan which is further analysed below. There is a sharp decrease in the average price from mid 2014 to early 2015. This due to an oversupply of petroleum on the world market which accelerated the drop in overall prices. There is also a drop in the average price in the early 2020 due to covid-19 pandemic. As the novel coronavirus continued to spread around the world, several countries imposed strict quarantine measures and travel restrictions, causing a drop in the demand for gasoline. Morevover, it can be observed that the price continues to go up from late 2020 reaching decade's highest in mid 2022 with major contributing factors being economic recovery after pandemic and Russia-Ukraine war.
+
+![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/gasoline_price_correlation.png)<br>
+From the above heatmap, it is observed that USA, Canada, UK, Germany and France have a strong positive correlation with each other, whereas Japan has a weak positive correlation. 
+ 
+![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pump_price_geoview.png)<br>
+From the above plot, it is seen that among the countries analysed, USA has the lowest average gasoline price followed by Canada. Countries in Europe and the UK have the highest average price.
 
 ### Part 2: Trend Analysis of Gasoline Prices before and after Pandemic
 
