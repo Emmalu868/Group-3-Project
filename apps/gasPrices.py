@@ -71,7 +71,7 @@ card2 = dbc.Card(
 
 # -------------------------------------------
 layout = html.Div([
-    html.Div(html.H2("International Gasoline Prices"),
+    html.Div(html.H2("Analysis of Historical Gasoline Price"),
              style={"text-align": "center"}),
     html.Hr(),
     # ----------

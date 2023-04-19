@@ -19,9 +19,10 @@ import pathlib
 # ----------Datasets-----------------------
 # -- Import and clean data (importing csv into pandas)
 # For choropleth
-df_gasPrice = pd.read_csv(r"./Resources/corr_gasPrice.csv", sep=",")
+# df_gasPrice = pd.read_csv(r"./Resources/corr_gasPrice.csv", sep=",")
 
-df_airPrice = pd.read_csv(r"./Resources/corr_airPrice.csv", sep=",")
+# df_airPrice = pd.read_csv(r"./Resources/corr_airPrice.csv", sep=",")
+df_air_gas = pd.read_csv(r"./Resources/concat_gas_airPice.csv", sep=",")
 
 df_Melt_airChange = pd.read_csv(r"./Resources/melt_airPctChange.csv", sep=",")
 
@@ -41,13 +42,47 @@ def melt_dataset(df):
 
     df_melt.sort_values(["day", "regions"], inplace=True)
     return df_melt
+# ------------------------------------------------------
 
+
+card3 = dbc.Card(
+    [
+        # dbc.CardImg(src="/assets/CorrelationAirline.png", top=True),
+        dbc.CardBody(
+            [
+                html.H5("Correlation between gasoline price and airline stocks",
+                        className="card-title"),
+                # html.P(
+                #     "Introduction ",
+                #     className="card-text",
+                # ),
+
+            ]
+        ),
+        dbc.CardImg(src="/assets/CorrelationAirline.png", top=True),
+    ],
+    # style={"width": "45%"},
+),
 
 # -----------------------------------------
 layout = html.Div([
-    html.Div(html.H2("Gasoline Prices vs. Airline Stocks"),
+    html.Div(html.H2("Examining the Relationship Between Oil Price and Stocks"),
              style={"text-align": "center"}),
     html.Hr(),
+    # --------------------
+    dbc.Container([
+        dbc.Row([
+            # dbc.Col([
+            #     html.Div(card2),
+            # ], xs=12, sm=12, md=12, lg=4, xl=4),
+            dbc.Col([
+                html.Div(card3),
+            ], xs=12, sm=12, md=12, lg=9, xl=9),
+
+        ], justify='around'),
+
+
+    ], fluid=True),
     # ----------
     dbc.Container([
         dbc.Row([
@@ -174,10 +209,9 @@ layout = html.Div([
 def update_fig(region):
 
     container_region = "The region chosen by user was: {}".format(region)
-    x_lst = df_gasPrice[region]
-    y_lst = df_airPrice[region]
 
-    fig = px.scatter(x=x_lst, y=y_lst, trendline="ols")
+    fig = px.scatter(df_air_gas, x=region, y=region.lower(), trendline="ols"
+                     )
     return container_region, fig
 
 # Airline Stocks Prices Fluctuations for the Selected Year
