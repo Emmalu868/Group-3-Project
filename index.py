@@ -38,10 +38,10 @@ sidebar = html.Div(
             [dbc.NavLink("Home", href='/apps/homePage', active="exact"),
              dbc.NavLink("Gasoline Prices",
                          href='/apps/gasPrices', active="exact"),
-             dbc.NavLink("Compare with Airline Stocks",
-                         href='/apps/withStock', active="exact"),
              dbc.NavLink("Impact of the pandemic",
                          href='/apps/withPandemic', active="exact"),
+             dbc.NavLink("Compare with Airline Stocks",
+                         href='/apps/withStock', active="exact"),
 
              ],
             vertical=True,
