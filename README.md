@@ -1,4 +1,6 @@
 # Analysis of Gasoline Prices and Airline Stocks in the Global Market
+![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/title.jpg)
+
 **Team Members:** <br>
 Karthika Ramachandran <br>
 Wanlin Li <br>
