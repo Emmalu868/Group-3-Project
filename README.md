@@ -48,7 +48,7 @@ From the above heatmap, it is observed that USA, Canada, UK, Germany and France 
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pump_price_geoview.png)<br>
 From the above plot, it is seen that among the countries analysed, USA has the lowest average gasoline price followed by Canada. Countries in Europe and the UK have the highest average price.
 
-### Part 2: ![Trend Analysis](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-Readme-with-images/Trend%20Analysis.ipynb)<br> 
+### Part 2: [Trend Analysis](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-Readme-with-images/Trend%20Analysis.ipynb)<br> 
 Examining the tax status of each country to identifying factors that impact the prices. Descriptive statistics of each country to identify trends, patterns, and anomalies. Visualization of gasoline prices
 * Used Pandas `read_csv` function and Path module to read gasoline prices of all six countries, created international_gasoline_prices DataFrame and converted the dates to a DateTimeIndex for all dataframes.
 * Slicing the data by Tax Status: base price of gasoline price, tax and total price of the gasoline.
