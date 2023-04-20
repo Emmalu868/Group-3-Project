@@ -80,7 +80,24 @@ Visulaize the trend of gasoline prices before and after the pandemic.
 ![USA](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/growth%20rate%20of%20usa%20before%20and%20after%20pandemic.PNG)<br>
 ![Germany](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/Growth%20rate%20germany%20before%20and%20after%20pandemic.PNG)<br>
 
-### Part 3: Examining the Relationship Between Oil Price and Stocks
+* Trend Analysis of gasoline prices Before And After the Pandemic 
+*  Creating two separate dataframes of the data 'before_2020_df' and 'after_2020_df'
+![Before_2020_df](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/before%202020.PNG)<br>
+![After_2020_df](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/after%202020.PNG)<br>
+
+Visulaize the trend of gasoline prices before and after the pandemic.
+![Analysis of dataframes before and after 2020](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/box.PNG)<br>
+![Price Range](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pr.PNG)<br>
+![Price Range Difference](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pr%20diff.PNG)<br>
+![Correlation](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/correlation%20graph%20before%20and%20after%20pandemic.PNG)<br>
+![Growth rate Of UK](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/growth%20rate%20of%20UK%20through%20before%20and%20after%20pandemic.PNG)<br>
+![Canada](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/growth%20rate%20of%20canada%20before%20and%20after%20pandemic.PNG)<br>
+![France](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/growth%20rate%20of%20france%20before%20and%20after%20pandemic.PNG)<br>
+![japan](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/growth%20rate%20of%20japan%20before%20and%20after%20pandemic.PNG)<br>
+![USA](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/growth%20rate%20of%20usa%20before%20and%20after%20pandemic.PNG)<br>
+![Germany](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/Growth%20rate%20germany%20before%20and%20after%20pandemic.PNG)<br>
+
+### Part 3: [Airline](https://github.com/Emmalu868/Group-3-Project/blob/Shan/Airline%20Data/Airline.ipynb)<br>Examining the Relationship Between Oil Price and Stocks
 * Used Pandas `read_csv` function and Path module to read all 6 airline stocks, created 6 DataFrame and converted the dates to a DateTimeIndex for all dataframes.
 * Renamed close column to the airline names and dropped other columns in the 6 airline dataframes.
 * Detected and removed null values using `dropna` function.
