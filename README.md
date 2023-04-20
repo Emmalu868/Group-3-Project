@@ -8,7 +8,8 @@ Shan Lu <br>
 Harshitha Katta <br>
 
 ## About the project
-As per studies and research, gasoline prices and airline stock prices share an inverse relationship, with the value of airline stocks rising as the gasoline's price falls. Our project is to test this by analysing historic gasoline prices and airline stocks for some of the major economies and examining their relationship. Our project also analyses how the demand and price for gasoline is impacted by a global crisis such as the COVID-19 pandemic.  <br>
+We have choosen to analyze gasoline prices and airline stock prices and to identify the relation between them. Gasoline and Airline industry is an enormously interesting industries to dig deeper. These two acts as some of the the best economic indicators. Gasoline industry affect wide range of industries like transportation, manufacturing and agriculture and many more. And, Airline industry is one of the best industries to understand consumer behaviour, whether people are willing to travel, spend money, and general behavioural pattens of the consumers. Relating these two would help us understand a better view of economic activity in the coming years.
+As per studies and research, gasoline prices and airline stock prices share an inverse relationship, with the value of airline stocks rising as the gasoline's price falls. But lets find out why? Our project is to test this by analysing historic gasoline prices and airline stocks for some of the major economies and examining their relationship. Our project also analyses how the demand and price for gasoline is impacted by a global crisis such as the COVID-19 pandemic. Because its important to take a major world event into consideration while we are trying to understand the trend.  <br>
 
 
 ## Datasets
@@ -47,7 +48,37 @@ From the above heatmap, it is observed that USA, Canada, UK, Germany and France 
 ![](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pump_price_geoview.png)<br>
 From the above plot, it is seen that among the countries analysed, USA has the lowest average gasoline price followed by Canada. Countries in Europe and the UK have the highest average price.
 
-### Part 2: Trend Analysis of Gasoline Prices before and after Pandemic
+### Part 2: ![Trend Analysis](https://github.com/Emmalu868/Group-3-Project/blob/hdkatta1-Readme-with-images/Trend%20Analysis.ipynb)<br> 
+Examining the tax status of each country to identifying factors that impact the prices. Descriptive statistics of each country to identify trends, patterns, and anomalies. Visualization of gasoline prices
+* Used Pandas `read_csv` function and Path module to read gasoline prices of all six countries, created international_gasoline_prices DataFrame and converted the dates to a DateTimeIndex for all dataframes.
+* Slicing the data by Tax Status: base price of gasoline price, tax and total price of the gasoline.
+* Three separate data frames are created according to tax status 'base_prices', 'tax_prices', 'total_prices'
+* Measured average Gasoline prices by tax status.
+![Tax Status](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/tax%20status.PNG)<br>
+
+
+
+* Descriptive Analysis to understand the data deeper.
+* Calculating Mean, Median, Maximum, Minimum, Variance and Standard Deviation. 
+ ![Descriptive Statistics](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/des%20stats.PNG)<br>
+
+
+* Trend Analysis of gasoline prices Before And After the Pandemic 
+*  Creating two separate dataframes of the data 'before_2020_df' and 'after_2020_df'
+![Before_2020_df](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/before%202020.PNG)<br>
+![After_2020_df](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/after%202020.PNG)<br>
+
+Visulaize the trend of gasoline prices before and after the pandemic.
+![Analysis of dataframes before and after 2020](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/box.PNG)<br>
+![Price Range](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pr.PNG)<br>
+![Price Range Difference](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/pr%20diff.PNG)<br>
+![Correlation](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/correlation%20graph%20before%20and%20after%20pandemic.PNG)<br>
+![Growth rate Of UK](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/growth%20rate%20of%20UK%20through%20before%20and%20after%20pandemic.PNG)<br>
+![Canada](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/growth%20rate%20of%20canada%20before%20and%20after%20pandemic.PNG)<br>
+![France](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/growth%20rate%20of%20france%20before%20and%20after%20pandemic.PNG)<br>
+![japan](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/growth%20rate%20of%20japan%20before%20and%20after%20pandemic.PNG)<br>
+![USA](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/growth%20rate%20of%20usa%20before%20and%20after%20pandemic.PNG)<br>
+![Germany](https://github.com/Emmalu868/Group-3-Project/blob/main/Images/Growth%20rate%20germany%20before%20and%20after%20pandemic.PNG)<br>
 
 ### Part 3: Examining the Relationship Between Oil Price and Stocks
 * Used Pandas `read_csv` function and Path module to read all 6 airline stocks, created 6 DataFrame and converted the dates to a DateTimeIndex for all dataframes.
@@ -94,7 +125,7 @@ Air Canada has the highest cumulative return for over 40 at the end of 2019, in 
 - Canada and Air Canada has a weak positive correlation at 0.09.
 - USA and American Airlines has a medium negative linear correlation at -0.42.
 
-
+In conclusion, we see a negative correlation between gasoline prices and airline stocks. This may be because higher gasoline prices increase the operating cost of the airlines, which will certainly increase their prices to consumers. If the price increases we can observe a lesser consumer demand. Which will automatically decrease their sales and profits. Thus resulting in a decrease in an overall value of the airline stock. Alternatively, when gasoline prices are low, airlines may have lower operating costs and higher profits, which can increase the value of their stocks. 
 
 ##  📊 Dashboard
 
