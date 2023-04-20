@@ -103,11 +103,12 @@ Air Canada has the highest cumulative return for over 40 at the end of 2019, in 
 
 -   [Python](https://www.python.org/)
 -   [Conda](https://conda.io/)  
--   [Plotly/Dash](https://dash.plotly.com/)
 
-The workflow includes the following Python packages:
+
+The dashboard includes the following Python packages:
 - [numpy](https://pypi.org/project/numpy/)
 - [pandas](https://pypi.org/project/pandas/)
+- [Plotly/Dash](https://dash.plotly.com/)
 
 ### Getting started 
 
